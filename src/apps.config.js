@@ -1,12 +1,11 @@
 import displayTodoist from './components/apps/todoist';
 import displaySpotify from './components/apps/spotify';
-import displayVsCode from './components/apps/vscode';
 import { displayTerminal } from './components/apps/terminal';
 import { displaySettings } from './components/apps/settings';
 import { displayChrome } from './components/apps/chrome';
 import { displayTrash } from './components/apps/trash';
 import { displayGedit } from './components/apps/gedit';
-import { displayAboutVivek } from './components/apps/vivek';
+import { displayAboutMe } from './components/apps/me';
 
 const apps = [
     {
@@ -28,22 +27,13 @@ const apps = [
         screen: displayTodoist,
     },
     {
-        id: "about-vivek",
-        title: "About Vivek",
+        id: "about-me",
+        title: "About Me",
         icon: './themes/Yaru/system/user-home.png',
         disabled: false,
         favourite: true,
         desktop_shortcut: true,
-        screen: displayAboutVivek,
-    },
-    {
-        id: "vscode",
-        title: "Visual Studio Code",
-        icon: './themes/Yaru/apps/vscode.png',
-        disabled: false,
-        favourite: true,
-        desktop_shortcut: false,
-        screen: displayVsCode,
+        screen: displayAboutMe,
     },
     {
         id: "terminal",
